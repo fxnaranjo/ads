@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>AgeAnalysis</name>
+  <uuid>416fadae-1d0e-40a5-ac64-68ab6ec723c6</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    Age is at least 18 and less than 55
+then
+    set decision to true ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

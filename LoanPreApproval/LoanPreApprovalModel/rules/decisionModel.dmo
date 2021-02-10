@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>23eb69e0-b22d-41d0-801f-51292386c125</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Income">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="Income"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Income" typeRef="java.lang.Double"/>
+    </inputData>
+    <decision id="node_1" name="INCOME">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Double" collection="false" name="Income"/>
+                <output bomType="java.lang.Boolean" collection="false" name="income_out"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_1/AnalysisIncome.drl" kind="BusinessRule" name="AnalysisIncome"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="INCOME" typeRef="java.lang.Boolean"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Age">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="Age"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Age" typeRef="java.lang.Long"/>
+    </inputData>
+    <inputData id="node_3" name="Employment">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Employment" collection="false" name="Employment"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="Employment" typeRef="Employment"/>
+    </inputData>
+    <decision id="node_4" name="Final Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Boolean" collection="false" name="income_out"/>
+                <input bomType="java.lang.Boolean" collection="false" name="age_out"/>
+                <input bomType="java.lang.Double" collection="false" name="risk_out"/>
+                <output bomType="java.lang.String" collection="false" name="Final Decision"/>
+                <rule defaultRule="false" href="node_4/FinalDecision.dmt" kind="DecisionTable" name="FinalDecision"/>
+                <rule defaultRule="true" href="node_4/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Final Decision" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_5" name="AGE">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="false" name="Age"/>
+                <output bomType="java.lang.Boolean" collection="false" name="age_out"/>
+                <rule defaultRule="true" href="node_5/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_5/AgeAnalysis.drl" kind="BusinessRule" name="AgeAnalysis"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="AGE" typeRef="java.lang.Boolean"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_6" name="RISK">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Employment" collection="false" name="Employment"/>
+                <output bomType="java.lang.Double" collection="false" name="risk_out"/>
+                <rule defaultRule="false" href="node_6/RiskAnalysis.drl" kind="BusinessRule" name="RiskAnalysis"/>
+                <rule defaultRule="true" href="node_6/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_6_ii" name="RISK" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
