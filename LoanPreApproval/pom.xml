@@ -17,6 +17,7 @@
     <modules>
         <module>BankDataModel</module>
         <module>LoanPreApprovalModel</module>
+        <module>RiskDecisionModel</module>
         <module>.decisionservice</module>
     </modules>
 

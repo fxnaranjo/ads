@@ -1,0 +1,84 @@
+{
+  "id" : "auto_ai_kb_input_schema",
+  "fields" : [ {
+    "name" : "age",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "age"
+  }, {
+    "name" : "job",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "job"
+  }, {
+    "name" : "marital",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "marital"
+  }, {
+    "name" : "education",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "education"
+  }, {
+    "name" : "default",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "default"
+  }, {
+    "name" : "balance",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "balance"
+  }, {
+    "name" : "housing",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "housing"
+  }, {
+    "name" : "loan",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "loan"
+  }, {
+    "name" : "contact",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "contact"
+  }, {
+    "name" : "day",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "day"
+  }, {
+    "name" : "month",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "month"
+  }, {
+    "name" : "duration",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "duration"
+  }, {
+    "name" : "campaign",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "campaign"
+  }, {
+    "name" : "pdays",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "pdays"
+  }, {
+    "name" : "previous",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "previous"
+  }, {
+    "name" : "poutcome",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "poutcome"
+  } ]
+}

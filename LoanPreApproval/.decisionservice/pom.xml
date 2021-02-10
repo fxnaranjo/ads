@@ -22,6 +22,11 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>decisions.decisiondemo.loanpreapproval</groupId>
+            <artifactId>riskDecisionModel</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
             <version>${engine-compact-runtime.version}</version>
@@ -60,6 +65,15 @@
                                 <artifactItem>
                                     <groupId>decisions.decisiondemo.loanpreapproval</groupId>
                                     <artifactId>loanPreApprovalModel</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>decisions.decisiondemo.loanpreapproval</groupId>
+                                    <artifactId>riskDecisionModel</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

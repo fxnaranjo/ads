@@ -1,0 +1,9 @@
+{
+  "name" : "decisions/DecisionDemo/WML1612996515795",
+  "type" : "WML",
+  "description" : "",
+  "mlUrl" : "https://us-south.ml.cloud.ibm.com",
+  "authUrl" : "https://iam.bluemix.net/identity/token",
+  "instanceId" : "4f04404a-28bc-4ab6-b4f0-05ddff7bca62",
+  "apiKey" : null
+}

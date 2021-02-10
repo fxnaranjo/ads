@@ -146,8 +146,31 @@
                     </Partition>
                 </Condition>
                 <Condition>
-                    <Expression/>
-                    <ActionSet/>
+                    <Expression>
+                        <Param><![CDATA[true]]></Param>
+                    </Expression>
+                    <Partition DefId="C1">
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[true]]></Param>
+                            </Expression>
+                            <Partition DefId="C2">
+                                <Condition>
+                                    <Expression>
+                                        <Param><![CDATA[0.8]]></Param>
+                                        <Param><![CDATA[1]]></Param>
+                                    </Expression>
+                                    <ActionSet>
+                                        <Action DefId="A0">
+                                            <Expression>
+                                                <Param><![CDATA["Eres lo maximo"]]></Param>
+                                            </Expression>
+                                        </Action>
+                                    </ActionSet>
+                                </Condition>
+                            </Partition>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression/>

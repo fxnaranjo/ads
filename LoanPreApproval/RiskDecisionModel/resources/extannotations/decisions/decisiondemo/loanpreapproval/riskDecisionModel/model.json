@@ -1,0 +1,89 @@
+{
+  "metadata" : {
+    "id" : "f6f43b08-1e3b-4ce8-bb57-7285e15abde1",
+    "name" : "Bank marketing sample data - fxn",
+    "modified_at" : "2021-02-10T00:31:03.447Z",
+    "created_at" : "2021-02-10T00:31:03.287Z",
+    "owner" : "IBMid-50DREQBRSX",
+    "space_id" : "4f04404a-28bc-4ab6-b4f0-05ddff7bca62"
+  },
+  "entity" : {
+    "content_import_state" : "completed",
+    "type" : "wml-hybrid_0.1",
+    "schemas" : {
+      "input" : [ {
+        "id" : "auto_ai_kb_input_schema",
+        "fields" : [ {
+          "name" : "age",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "job",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "marital",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "education",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "default",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "balance",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "housing",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "loan",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "contact",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "day",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "month",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "duration",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "campaign",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "pdays",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "previous",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "poutcome",
+          "type" : "other",
+          "nullable" : true
+        } ]
+      } ],
+      "output" : [ ]
+    }
+  },
+  "id" : "f6f43b08-1e3b-4ce8-bb57-7285e15abde1",
+  "name" : "Bank marketing sample data - fxn",
+  "trainedAt" : "2021-02-10T00:31:03.287Z",
+  "modifiedAt" : "2021-02-10T00:31:03.447Z"
+}
