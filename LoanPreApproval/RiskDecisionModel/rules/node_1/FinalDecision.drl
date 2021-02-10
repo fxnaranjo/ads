@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>FinalDecision</name>
+  <uuid>08b93b29-40dd-4459-8fc3-9d38098f1101</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to the maximum probability of 'ML model invocation'  ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

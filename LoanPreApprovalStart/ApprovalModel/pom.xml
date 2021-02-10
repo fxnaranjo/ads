@@ -2,13 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>decisions.decisiondemo.loanpreapproval</groupId>
-        <artifactId>loanPreApproval</artifactId>
+        <groupId>decisions.decisiondemo.loanpreapprovalstart</groupId>
+        <artifactId>loanPreApprovalStart</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>decisions.decisiondemo.loanpreapproval</groupId>
-    <artifactId>loanPreApprovalModel</artifactId>
+    <groupId>decisions.decisiondemo.loanpreapprovalstart</groupId>
+    <artifactId>approvalModel</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>decision-library</packaging>
 
@@ -20,10 +20,10 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>loanPreApprovalModel</name>
+                            <name>approvalModel</name>
                         </deployment>
                     </deployments>
-                <packageName>decisions.decisiondemo.loanpreapproval.loanpreapprovalmodel</packageName>
+                <packageName>decisions.decisiondemo.loanpreapprovalstart.approvalmodel</packageName>
                 </configuration>
             </plugin>
         </plugins>
@@ -31,14 +31,8 @@
 
 <dependencies>
         <dependency>
-            <groupId>decisions.decisiondemo.loanpreapproval</groupId>
+            <groupId>decisions.decisiondemo.loanpreapprovalstart</groupId>
             <artifactId>bankDataModel</artifactId>
-            <type>decision-library</type>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>decisions.decisiondemo.loanpreapproval</groupId>
-            <artifactId>riskDecisionModel</artifactId>
             <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>

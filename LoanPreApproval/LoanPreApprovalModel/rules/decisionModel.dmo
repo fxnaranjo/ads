@@ -40,7 +40,7 @@
     <inputData id="node_3" name="Employment">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="Employment" collection="false" name="Employment"/>
+                <output bomType="Employment" collection="false" name="employment_var"/>
             </initialization>
         </extensionElements>
         <variable id="node_3_ii" name="Employment" typeRef="Employment"/>
@@ -64,7 +64,7 @@
             <requiredInput href="#node_5"/>
         </informationRequirement>
         <informationRequirement>
-            <requiredInput href="#node_6"/>
+            <requiredInput href="#node_8"/>
         </informationRequirement>
     </decision>
     <decision id="node_5" name="AGE">
@@ -81,19 +81,46 @@
             <requiredInput href="#node_2"/>
         </informationRequirement>
     </decision>
-    <decision id="node_6" name="RISK">
+    <decision id="node_8" name="RiskModel">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="Employment" collection="false" name="Employment"/>
+                <input bomType="Employment" collection="false" name="employment_var"/>
                 <output bomType="java.lang.Double" collection="false" name="risk_out"/>
-                <rule defaultRule="false" href="node_6/RiskAnalysis.drl" kind="BusinessRule" name="RiskAnalysis"/>
-                <rule defaultRule="true" href="node_6/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_8/ExecuteModel.drl" kind="BusinessRule" name="ExecuteModel"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_6_ii" name="RISK" typeRef="java.lang.Double"/>
+        <variable id="node_8_ii" name="RiskModel" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_3"/>
         </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_9"/>
+        </knowledgeRequirement>
     </decision>
+    <businessKnowledgeModel id="node_9" name="RiskDecisionModel">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="RiskDecisionModel" typeRef="java.lang.Double"/>
+        <encapsulatedLogic typeRef="java.lang.Double">
+            <formalParameter name="inputType" typeRef="Employment"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.decisiondemo.loanpreapproval.riskDecisionModel.RiskDecisionModel"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(Employment)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

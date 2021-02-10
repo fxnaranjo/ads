@@ -1,0 +1,6 @@
+
+# Employment
+Employment#concept.label = Employment
+Employment.dependiente#instance.label = dependiente
+Employment.independiente#instance.label = independiente
+Employment.sinEmpleo#instance.label = sin empleo

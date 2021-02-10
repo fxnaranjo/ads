@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>AnalysisIncome</name>
+  <uuid>187843ed-336f-44f4-85c5-0a7a38a2b6a9</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    Income is at least 2000
+then
+    set decision to true ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

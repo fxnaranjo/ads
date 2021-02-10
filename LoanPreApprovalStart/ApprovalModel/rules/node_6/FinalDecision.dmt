@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
   <name>FinalDecision</name>
-  <uuid>2858b992-4a17-4934-80a7-7d728fd2676f</uuid>
+  <uuid>7fa7724e-95ec-412b-855e-d0d29ae867f0</uuid>
   <locale>en_US</locale>
   <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
     <Body>
@@ -11,7 +11,7 @@
         </Properties>
         <Structure>
             <ConditionDefinitions>
-                <ConditionDefinition Id="C0">
+                <ConditionDefinition Id="C4">
                     <Properties>
                         <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[false]]></Property>
                         <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[false]]></Property>
@@ -20,10 +20,10 @@
                         <Text><![CDATA[income_out is <a boolean>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
-                <ConditionDefinition Id="C1">
+                <ConditionDefinition Id="C0">
                     <Properties>
                         <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[false]]></Property>
-                        <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[true]]></Property>
+                        <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[false]]></Property>
                     </Properties>
                     <ExpressionDefinition>
                         <Text><![CDATA[age_out is <a boolean>]]></Text>
@@ -44,12 +44,12 @@
             </ActionDefinitions>
         </Structure>
         <Contents>
-            <Partition DefId="C0">
+            <Partition DefId="C4">
                 <Condition>
                     <Expression>
                         <Param><![CDATA[false]]></Param>
                     </Expression>
-                    <Partition DefId="C1">
+                    <Partition DefId="C0">
                         <Condition>
                             <Expression>
                                 <Param><![CDATA[false]]></Param>
@@ -68,7 +68,7 @@
                     <Expression>
                         <Param><![CDATA[true]]></Param>
                     </Expression>
-                    <Partition DefId="C1">
+                    <Partition DefId="C0">
                         <Condition>
                             <Expression>
                                 <Param><![CDATA[false]]></Param>
@@ -95,7 +95,7 @@
                     <Expression>
                         <Param><![CDATA[true]]></Param>
                     </Expression>
-                    <Partition DefId="C1">
+                    <Partition DefId="C0">
                         <Condition>
                             <Expression>
                                 <Param><![CDATA[true]]></Param>
@@ -122,7 +122,7 @@
                     <Expression>
                         <Param><![CDATA[false]]></Param>
                     </Expression>
-                    <Partition DefId="C1">
+                    <Partition DefId="C0">
                         <Condition>
                             <Expression>
                                 <Param><![CDATA[true]]></Param>
@@ -131,7 +131,7 @@
                                 <Condition>
                                     <Expression>
                                         <Param><![CDATA[0]]></Param>
-                                        <Param><![CDATA[0.3]]></Param>
+                                        <Param><![CDATA[0.41]]></Param>
                                     </Expression>
                                     <ActionSet>
                                         <Action DefId="A0">
@@ -149,7 +149,7 @@
                     <Expression>
                         <Param><![CDATA[true]]></Param>
                     </Expression>
-                    <Partition DefId="C1">
+                    <Partition DefId="C0">
                         <Condition>
                             <Expression>
                                 <Param><![CDATA[true]]></Param>
@@ -197,14 +197,14 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[income_out]]></Data>
-            <Data Name="Definitions(C1)#HeaderText"><![CDATA[age_out]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[106]]></Data>
+            <Data Name="Definitions(C4)#HeaderText"><![CDATA[income_out]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[age_out]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[415]]></Data>
             <Data Name="Definitions(C2)#HeaderText"><![CDATA[risk_out]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Final Decision]]></Data>
-            <Data Name="Definitions(C1)#Width"><![CDATA[80]]></Data>
-            <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
-            <Data Name="Definitions(C2)#Width"><![CDATA[91]]></Data>
+            <Data Name="Definitions(C4)#Width"><![CDATA[245]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[295]]></Data>
+            <Data Name="Definitions(C2)#Width"><![CDATA[350]]></Data>
         </ResourceSet>
     </Resources>
 </DT></definition>
