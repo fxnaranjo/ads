@@ -77,7 +77,7 @@
                                 <Condition>
                                     <Expression>
                                         <Param><![CDATA[0]]></Param>
-                                        <Param><![CDATA[0.2]]></Param>
+                                        <Param><![CDATA[01]]></Param>
                                     </Expression>
                                     <ActionSet>
                                         <Action DefId="A0">
@@ -104,7 +104,7 @@
                                 <Condition>
                                     <Expression>
                                         <Param><![CDATA[0]]></Param>
-                                        <Param><![CDATA[0.5]]></Param>
+                                        <Param><![CDATA[1]]></Param>
                                     </Expression>
                                     <ActionSet>
                                         <Action DefId="A0">
@@ -131,7 +131,7 @@
                                 <Condition>
                                     <Expression>
                                         <Param><![CDATA[0]]></Param>
-                                        <Param><![CDATA[0.3]]></Param>
+                                        <Param><![CDATA[1]]></Param>
                                     </Expression>
                                     <ActionSet>
                                         <Action DefId="A0">
@@ -146,31 +146,14 @@
                     </Partition>
                 </Condition>
                 <Condition>
-                    <Expression>
-                        <Param><![CDATA[true]]></Param>
-                    </Expression>
-                    <Partition DefId="C1">
-                        <Condition>
+                    <Expression/>
+                    <ActionSet>
+                        <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[true]]></Param>
+                                <Param/>
                             </Expression>
-                            <Partition DefId="C2">
-                                <Condition>
-                                    <Expression>
-                                        <Param><![CDATA[0.8]]></Param>
-                                        <Param><![CDATA[1]]></Param>
-                                    </Expression>
-                                    <ActionSet>
-                                        <Action DefId="A0">
-                                            <Expression>
-                                                <Param><![CDATA["Muy bien!!"]]></Param>
-                                            </Expression>
-                                        </Action>
-                                    </ActionSet>
-                                </Condition>
-                            </Partition>
-                        </Condition>
-                    </Partition>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression/>

@@ -4,7 +4,7 @@
   <uuid>416fadae-1d0e-40a5-ac64-68ab6ec723c6</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
-    Age is at least 18 and less than 55
+    Age is at least 16 and less than 65
 then
     set decision to true ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

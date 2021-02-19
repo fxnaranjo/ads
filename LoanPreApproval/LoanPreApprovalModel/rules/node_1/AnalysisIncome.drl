@@ -4,7 +4,7 @@
   <uuid>54ae958d-b63a-497b-8891-b16219b12c96</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
-    Income is at least 2000
+    Income is at least 1500
 then
     set decision to true ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
