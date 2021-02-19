@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
-  <name>FinalDecision</name>
-  <uuid>2858b992-4a17-4934-80a7-7d728fd2676f</uuid>
+  <name>MyFinalDecision</name>
+  <uuid>5a53767c-b63f-481d-8ab0-3be8d405e4cd</uuid>
   <locale>en_US</locale>
   <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
     <Body>
@@ -82,7 +82,7 @@
                                     <ActionSet>
                                         <Action DefId="A0">
                                             <Expression>
-                                                <Param><![CDATA["PreAprobado con revisión"]]></Param>
+                                                <Param><![CDATA["PreAprobado con revision"]]></Param>
                                             </Expression>
                                         </Action>
                                     </ActionSet>
@@ -136,7 +136,7 @@
                                     <ActionSet>
                                         <Action DefId="A0">
                                             <Expression>
-                                                <Param><![CDATA["PreAprobado con revisión"]]></Param>
+                                                <Param><![CDATA["PreAprobado con revision"]]></Param>
                                             </Expression>
                                         </Action>
                                     </ActionSet>
@@ -147,13 +147,7 @@
                 </Condition>
                 <Condition>
                     <Expression/>
-                    <ActionSet>
-                        <Action DefId="A0">
-                            <Expression>
-                                <Param/>
-                            </Expression>
-                        </Action>
-                    </ActionSet>
+                    <ActionSet/>
                 </Condition>
                 <Condition>
                     <Expression/>

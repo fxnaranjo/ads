@@ -52,8 +52,8 @@
                 <input bomType="java.lang.Boolean" collection="false" name="age_out"/>
                 <input bomType="java.lang.Double" collection="false" name="risk_out"/>
                 <output bomType="java.lang.String" collection="false" name="Final Decision"/>
-                <rule defaultRule="false" href="node_4/FinalDecision.dmt" kind="DecisionTable" name="FinalDecision"/>
                 <rule defaultRule="true" href="node_4/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_4/MyFinalDecision.dmt" kind="DecisionTable" name="MyFinalDecision"/>
             </ruleset>
         </extensionElements>
         <variable id="node_4_ii" name="Final Decision" typeRef="java.lang.String"/>
